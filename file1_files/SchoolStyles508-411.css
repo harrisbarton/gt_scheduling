@@ -1,0 +1,667 @@
+/* timestamp:2020/05/26 10:15:46 */
+.foo {} 
+/* Variable declarations go here *
+
+	$_color_Header1
+	$_color_Header2
+    $_color_HeaderText1    
+    $_color_HeaderText2
+    $_color_TableHeaderBG
+    $_color_TableHeaderText
+    $_color_MenuHighlightBG
+    $_color_MenuHighlightText
+    $_color_Link
+    $_color_LinkHover
+    $_color_instructions_icon
+    $_color_background_RowInstructor
+    $_color_background_RowScale
+    $_color_RowScale
+
+*/
+
+	a {
+        color:#104E8B;
+	}
+	a:hover, a:focus {
+        color:Green;
+	}
+    div.studentViewHeaderContent {
+		background-color:#00254c;
+		color:#EAAA00;
+	}
+    span.faqSubHeader {
+		background-color:#00254c;
+		color:#EAAA00;
+    }
+    header.ribbonHeader {
+		background-color:#00254c;
+		color:#EAAA00;
+    }
+    .dxmLite_Custom .dxm-horizontal {
+		background-color:#00254c;
+	}
+    .dxmLite_Custom, .dxmLite_Custom .dxeCaption_Custom, .dxmLite_Custom .dxeRequiredMark_Custom, .dxmLite_Custom .dxeOptionalMark_Custom, .dxmLite_Custom .dxm-item a.dx {
+        color:#EAAA00 !important;
+    }
+    div.dxmLite_Custom div.dxm-popup {
+		background-color:#00254c;
+	}
+    .dxmLite_Custom .dxm-popup,
+    .dxmLite_Custom .dxm-popup .dxm-item a.dx {
+        color:#EAAA00 !important;
+    }
+    .dxmLite_Custom .dxm-main .dxm-hovered,
+	.dxmLite_Custom .dxm-main .dxm-checked, 
+	.dxmLite_Custom .dxm-main .dxm-selected {
+		background: none;
+		background-color:#00254c;
+	}
+	div.dxmLite_Custom div.dxm-popup li.dxm-hovered,
+	div.dxmLite_Custom div.dxm-popup li.dxm-checked,
+	div.dxmLite_Custom div.dxm-popup li.dxm-selected {
+		border-color:#EAAA00;
+        background-color:#EAAA00;
+	}
+	div.dxmLite_Custom div.dxm-popup li.dxm-hovered a.dx,
+	div.dxmLite_Custom div.dxm-popup li.dxm-checked a.dx,
+	div.dxmLite_Custom div.dxm-popup li.dxm-selected a.dx {
+        color:BLACK !important;
+	}
+
+    input[type=submit], input[type=button], .basicButton {
+        background-color:#EAAA00 !important;
+        color:BLACK !important;
+    }
+    input[type=submit]:hover, input[type=submit]:focus,
+    input[type=button]:hover, input[type=button]:focus,
+    .basicButton:hover, .basicButton:focus {
+        background-color:#B3A369 !important;
+        color:BLACK !important;
+    }
+    .basicButton.secondaryButton {
+        background-color:#00254c;
+        color:#ffffff;
+    }
+    .lnkButton {
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+    .lnkButton:hover, .lnkButton:focus {
+        background-color:#B3A369;
+        color:BLACK;
+    }
+    span.footerStudentName {
+        background-color:#00254c;
+        color:#EAAA00;
+    }
+    a.footerStudentName {
+		color:#EAAA00 !important;
+        text-decoration:none;
+    }
+    a.footerStudentName:hover, a.footerStudentName:focus {
+        text-decoration:underline;
+    }
+    a.buttonCompleteSurvey {
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+    a.buttonCompleteSurvey:hover, a.buttonCompleteSurvey:focus {
+        background-color:#B3A369;
+        color:BLACK;
+    }
+
+
+    a.buttonRetakeSurvey {
+        background-color:#00254c;
+        color:#ffffff;
+    }
+    a.buttonRetakeSurvey:hover, a.buttonRetakeSurvey:focus {
+        background-color:#B3A369;
+        color:BLACK;
+    }
+
+	div.questionRibbonAccent {
+		border-right:15px solid #BCD2EE;
+		border-left:15px solid #BCD2EE;
+	}
+
+    div#headerMenuContainer {
+		background-color:#00254c;
+		color:#EAAA00 !important;
+    }
+
+    svg .cls-1, svg .cls-2, svg .cls-3, svg .cls-4 {
+        fill:#EAAA00 !important;
+    }
+
+    div.HeaderSchoolName {
+		background-color:#00254c;
+        color:#EAAA00;
+    }
+    div.HeaderSchoolName > a, div.HeaderSchoolName > a:visited,
+    div.HeaderSchoolName > a:active, div.HeaderSchoolName > a:hover,
+    div.HeaderSchoolName > a:focus {
+        color:#EAAA00 !important;
+    }
+    
+    .ocebuttonfull span {
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+
+    .ocebuttonfull span:hover, .ocebuttonfull span:focus {
+        background-color:#B3A369;
+        color:BLACK;
+    }
+
+    .ArrowMenuItemCompleted {
+        background-color:#00254c !important;
+        color:#EAAA00 !important;
+    }
+
+    div.AdditionalInstructorName {
+        background-color:#B3A369 !important;
+    }
+
+    td.dxgvHeader_Custom,
+    tr.dxgvDataRow_Custom td.dxgvHeader_Custom,
+    tr.dxgvDataRow_Custom.dxgvDataRowAlt_Custom td.dxgvHeader_Custom, th.dxgvHeader_Custom {
+        border:1px solid BLACK;
+        border-bottom:0 !important;
+        background-color:#EAAA00 !important;
+        color:BLACK;
+    }
+    .dxgvHeader_Custom table, .dxgvHeader_Custom table a {
+        color:BLACK !important;
+    }
+    td.dxgvHeader_Custom.invisibleText {
+         color:rgba(0,0,0,0) !important;
+     }
+
+    td.dxgvHeader_Custom479 {
+        /* defined separately due to their custom grid color that is not the same as the header color. this customization is not new  */
+        background-color: #A0A0A0 !important;
+        color: #FFFFFF !important;
+        font-weight: bold;
+    }
+    td.dxgvHEC,
+    td.dxgvHeader_Custom.dxgvHEC {
+        /*this will keep extra space to the right of a gridview from looking ugly*/
+        border:0 !important;
+        background-color:#ffffff !important;
+    }
+
+    /*.divRatingScaleHeader {
+        background-color:#00254c;
+        color:#EAAA00;
+    }*/
+    .switchSlide {
+        background-color:#EAAA00;
+    }
+    .miniTableHeader th {
+        border:1px solid BLACK;
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+    .divMiniTable::-webkit-scrollbar-thumb {
+        background: #00254c; 
+    }
+
+
+    #divSearchInterface,
+    #divExportInterface {
+        background-color:#00254c;
+        color:#EAAA00;
+    }
+
+    table.dataDictionaryTable th {
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+
+    .mnuTabs a.static.highlighted {
+        background-color:#00254c !important;
+        color:#EAAA00 !important;
+    }
+    .mnuTabs a.static.selected {
+        background-color:#666666 !important;
+        color:#ffffff !important;
+    }
+
+    .AspNet-GridView th a {
+        color:BLACK !important;
+        text-decoration:underline;
+    }
+    .AspNet-GridView th a:hover, .AspNet-GridView th a:focus {
+        color:BLACK !important;
+        text-decoration:none;
+        transform:scale(1.25);
+    }
+    .AspNet-GridView td a {
+        color:#104E8B !important;
+    }
+    .AspNet-GridView td a:hover, .AspNet-GridView td a:focus {
+        color:Green !important;
+    }
+
+    .backLinkButton, .backLinkButton.toWizard {
+        background-color:#EAAA00 !important;
+        color:BLACK !important;
+    }
+    .backLinkButton:hover, .backLinkButton:focus,
+    .backLinkButton.toWizard:hover, .backLinkButton.toWizard:focus {
+        background-color:#B3A369 !important;
+        color:BLACK !important;
+    }
+
+
+    #divReportChooserContainer {
+        background-color:#ffffff;
+        color:#00254c !important;
+    }
+    .divSelectionColumn > a {
+        background-color:transparent;
+        color:#00254c !important;
+    }
+    .divSelectionColumn > a:hover, .divSelectionColumn > a:focus {
+        background-color:#00254c !important;
+        color:#EAAA00 !important;
+        box-shadow:0 0 6px #00254c !important;
+    }
+    #divReportChooserContainer svg .cls-1, svg .cls-2, svg .cls-3, svg .cls-4 {
+        fill:#00254c !important;
+    }
+    .reportTypeChoice, .reportTypeChoice:hover,
+    .lnkReportType, .lnkReportType:hover, .lnkReportType:focus,
+    #Actions > a, #Actions > a:hover, #Actions > a:focus {
+        color:#00254c;
+    }
+    .radlstReportType input[type="radio"]:checked + label,
+    .reportTypeChoice.selected, .lnkReportType.selected,
+    #Actions > a.selected {
+	    box-shadow: 0 0 6px 1px #00254c;
+    }
+    .radlstReportType label:hover, .radlstReportType input[type=radio]:focus + label,
+    .reportTypeChoice:hover, .reportTypeChoice:focus,
+    .lnkReportType:hover, .lnkReportType:focus,
+    #Actions > a:hover, #Actions > a:focus {
+	    box-shadow: 0 0 9px 3px #00254c !important;
+    }
+    .radlstReportType .aspNetDisabled label:hover, .radlstReportType .aspNetDisabled input[type=radio]:focus + label,
+    .lnkReportType.aspNetDisabled:hover, .lnkReportType.aspNetDisabled:focus {
+        box-shadow:none !important;
+    }
+    #divChangeAndSaveTimePrefs {
+        border-left-color:#00254c !important;
+    }
+    .divReportChooserPreviewDisplay {
+        border:2px solid #EAAA00;
+        box-shadow:0 0 0 6px #00254c;
+    }
+
+
+    .basicButton.iAmSelected {
+        background-color:#B3A369 !important;
+        color:BLACK !important;
+    }
+    .lnkCustomizeQuestions,
+    .divLinksAtTop > .lnkOther {
+        color:#104E8B !important;
+    }
+    .lnkCustomizeQuestions:hover, .lnkCustomizeQuestions:focus,
+    .divLinksAtTop > .lnkOther:hover, .divLinksAtTop > .lnkOther:focus {
+        color:Green !important;
+    }
+    #divChartingInterfaceContainer .lnkCustomizeQuestions:hover, #divChartingInterfaceContainer .lnkCustomizeQuestions:focus,
+    #divNarrowLinkGroup > a:hover, #divNarrowLinkGroup > a:focus {
+        background-color:#B3A369 !important;
+        color:BLACK !important;
+    }
+
+
+    .linkTab {
+        background-color:#00254c;
+        color:#EAAA00;
+    }
+    .linkTab.selected {
+        background-color:#EAAA00;
+        color:BLACK;
+    }
+    .linkTab:hover, .linkTab:focus {
+        background-color:#B3A369;
+        color:BLACK;
+    }
+    #flxBackAndNextButtons {
+        border-top:6px solid #EAAA00;
+        border-right:6px solid #EAAA00;
+        border-left:6px solid #EAAA00;
+    }
+    #hypBack, #hypNext {
+        color:#104E8B;
+    }
+    #hypBack:hover, #hypBack:focus, #hypNext:hover, #hypNext:focus {
+        color:Green;
+    }
+    #divSetupBackground {
+        background-color:#EAAA00;
+        background-image:linear-gradient(to bottom, rgba(255,0,0,0), rgba(242,242,242,0.85));
+    }
+    .hypColumnName {
+        color:#104E8B;
+    }
+    .hypColumnName:hover, .hypColumnName:focus {
+        color:Green;
+    }
+    .specifyButton {
+        background-color:#104E8B;
+    }
+    .specifyButton:hover, .specifyButton:focus {
+        background-color:Green;
+    }
+
+
+    /* Old GridView Styling */
+    .AspNet-GridView div.AspNet-GridView-Pagination, .AspNet-GridView div.AspNet-GridView-Pagination a, .AspNet-GridView div.AspNet-GridView-Pagination span {
+    color: #00FFFF;
+    background: #284775;
+    font-weight: normal;
+    padding: 2px;
+    }
+    .shadowcolsdfasd {
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=3, OffY=3, Color=yellow, Positive='true');
+    }
+    .AspNet-GridView table {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-collapse: collapse;
+    }
+    .AspNet-GridView table tbody tr {
+    background: White;
+    }
+    .AspNet-GridView table thead tr th, .AspNet-GridView table tbody tr td.GVHR, .AspNet-GridView table tbody tr.AspNet-GridView-Alternate td.GVHR {
+    color: BLACK;
+    background: #EAAA00;
+    font-weight: bold;
+    border-bottom: solid 1px #CCCCCC;
+    border-right: 0px !important;
+    border-left: 0px !important;
+    
+    background-repeat: repeat-x;
+    background-position: bottom right;
+    border-bottom: 0px !important;
+    }
+    .AspNet-GridView table thead tr th a:visited {
+    text-align: center;
+    }
+    .AspNet-GridView table thead tr th a:link {
+    background: none;
+    text-align: center;
+    }
+    .AspNet-Gridview td.ed {
+    }
+    .AspNet-GridView table tbody tr td {
+    padding: 2px 2px 2px 2px;
+    border-bottom: solid 1px #CCCCCC;
+    border-right: solid 1px #CCCCCC;
+    border-left: solid 1px #CCCCCC;
+    text-align: center;
+    color: Black;
+    }
+    .AspNet-GridView table tbody tr.AspNet-GridView-Alternate td {
+    background: Gainsboro;
+    color: Black;
+    }
+    .AspNet-GridView table tbody tr.AspNet-GridView-Selected td {
+    background: Yellow;
+    }
+    .AspNet-GridView table tfoot tr td {
+    text-align: center;
+    background: #CCCCCC;
+    }
+    /********************************************************* NEWER GRID VIEW RULES -Alix 2/25/2011 *********************************************************/
+    .AspNet-GridView thead tr th {
+    height: 50px;
+    padding: 5px;
+    }
+    /********************************************************* END NEWER GRID VIEW RULES *********************************************************/
+    /********************************************************* PERCENTILE RANK CSS -Alix 1/18/2011 *********************************************************/
+    .PRtable {
+    border: 0px !important;
+    }
+    /* hopefully the rounded corner method is updated to be the absolute first and last cell in a row ^^^^^ not sure who wrote that comment ^^^^^ but we did have a solution for that, however it seems to have been pulled out? I have a backup of the working code if we decide to put it back in. -alix */
+    .HeadCss0 {
+    /* excel */
+    border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px 10px;
+    }
+    .HeadCssEnd {
+    border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px 10px;
+    }
+    .FootCss0 {
+    /* excel */
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px 10px;
+    }
+    .FootCssEnd {
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px 10px;
+    }
+    .HeadCss16{
+    /* last row */
+    }
+    .PRcssGLtext, .PRcsstext {
+    text-align: justify !important;
+    }
+    /* violin: here's the modern soluton to the problem */
+    .AspNet-GridView thead th:first-of-type {
+    border-top-left-radius: 10px;
+    -moz-border-radius-topleft: 10px 10px;
+    }
+    .AspNet-GridView thead th:last-of-type {
+    border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px 10px;
+    }
+    .AspNet-GridView tfoot td:first-of-type {
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px 10px;
+    }
+    .AspNet-GridView tfoot td:last-of-type {
+    border-bottom-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px 10px;
+    }
+    /****************************************************/
+    .digitsGL {
+    font-size:11px;
+    padding-left:5px;
+    padding-right:5px;
+    }
+    .digits {
+    font-size:15px;
+    letter-spacing:3px;
+    word-spacing:12px;
+    padding-left:5px;
+    padding-right:5px;
+    }
+    .HeadCssPR, .HeadCss10, .HeadCss11, .HeadCss13, .HeadCss14, .HeadCss15, .HeadCss17, .HeadCss18, .HeadCss22, .PRHEADcss9 {
+    font-size: 15px;
+    /*width: 58px;
+    */
+    }
+    .PRcssGL100, .PRcss100, .PRcssA100, .PRcssGL89, .PRcss89, .PRcssA89, .PRcssGL79, .PRcss79, .PRcssA79, .PRcssGL69, .PRcss69 , .PRcssA69, .PRcssGL59, .PRcss59, .PRcssA59, .PRcssGL49, .PRcss49, .PRcssA49, .PRcssGL39, .PRcss39, .PRcssA39, .PRcssGL29, .PRcss29 , .PRcssA29, .PRcssGL19, .PRcss19 , .PRcssA19, .PRcssGL9, .PRcss9, .PRcssA9 {
+    width: 58px;
+    }
+    .PRcss100, .PRcssA100, .PRcss89, .PRcssA89, .PRcss79, .PRcssA79, .PRcss69, .PRcssA69, .PRcss59, .PRcssA59, .PRcss49, .PRcssA49, .PRcss39, .PRcssA39, .PRcss29, .PRcssA29, .PRcss19, .PRcssA19, .PRcss9, .PRcssA9 {
+    border-left: 0px !important;
+    border-right: 0px !important;
+    }
+    .PRcssGL100, .PRcssGL89, .PRcssGL79, .PRcssGL69, .PRcssGL59, .PRcssGL49, .PRcssGL39, .PRcssGL29, .PRcssGL19, .PRcssGL9 {
+    border-right: 1px solid black !important;
+    }
+    .PRcssGL39 {
+    border-right: 0px !important;
+    }
+    .PRcssGL100 {
+    border-left: 1px solid black !important;
+    }
+    .PRcssGL100, .PRcss100 {
+    background-image: url("/gfx/table/percentile/green-f1.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGL89, .PRcss89 {
+    background-image: url("/gfx/table/percentile/green-f2.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGL79, .PRcss79 {
+    background-image: url("/gfx/table/percentile/green-f3.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA9 {
+    background-image: url("/gfx/table/percentile/green-s1.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA19 {
+    background-image: url("/gfx/table/percentile/green-s2.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA29 {
+    background-image: url("/gfx/table/percentile/green-s3.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGL89 {
+    border-right: 3px solid black !important;
+    }
+    .PRcssGL69, .PRcss69, .PRcssA69, .PRcssGL59, .PRcss59, .PRcssA59, .PRcssGL49, .PRcss49, .PRcssA49, .PRcssGl39, .PRcss39, .PRcssA39 {
+    background-color: white !important;
+    }
+    .PRcssGL29, .PRcss29 {
+    background-image: url("/gfx/table/percentile/red-f1.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGL29 {
+    border-left: 3px solid black !important;
+    }
+    .PRcssGL19, .PRcss19 {
+    background-image: url("/gfx/table/percentile/red-f2.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGL9, .PRcss9 {
+    background-image: url("/gfx/table/percentile/red-f3.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA79 {
+    background-image: url("/gfx/table/percentile/red-s1.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA89 {
+    background-image: url("/gfx/table/percentile/red-s2.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssA100 {
+    background-image: url("/gfx/table/percentile/red-s3.jpg") !important;
+    background-repeat: repeat-y;
+    }
+    .PRcssGLzz, .PRcssGLtext, .PRcssGLnum, .PRcssGL100, .PRcssGL89, .PRcssGL69, .PRcssGL59, .PRcssGL49, .PRcssGL29, .PRcssGL19, .PRcssGL9 {
+    border-right: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    }
+    .PRcssGL79, .PRcssGL39 {
+    border-bottom: 1px solid black !important;
+    }
+    .PRcsszz, .PRcsstext, .PRcssnum, .PRcss100, .PRcss89, .PRcss79, .PRcss69, .PRcss59, .PRcss49, .PRcss39, .PRcss29, .PRcss19, .PRcss9 {
+    border-bottom: 1px solid black !important;
+    }
+    .PRcssA100, .PRcssA89, .PRcssA79, .PRcssA69, .PRcssA59, .PRcssA49, .PRcssA39, .PRcssA29, .PRcssA19, .PRcssA9 {
+    border-bottom: 1px solid black !important;
+    }
+    .PRcssGLzz, .PRcssGLtext, .PRcssGLnum, .PRcssGL69, .PRcssGL59, .PRcssGL49, .PRcssGL39 {
+    background-color: white !important;
+    }
+    /********************************************************* END PERCENTILE RANK CSS *********************************************************/
+    /********************************************************* EarlyWarningAtRisk CSS Petar *********************************************************/
+    .EarlyWarningAtRisk td {
+    height:20px;
+    background-color: white !important;
+    }
+    /********************************************************* end EarlyWarningAtRisk CSS *********************************************************/
+    /* allow table cells to be left aligned */
+    .TableCellLeft {
+    text-align: left !important;
+    }
+
+
+
+    /* -------------------------------------------------------- */
+    /* Wizard Classes											*/
+    /* -------------------------------------------------------- */
+    .ArrowMenu {
+	    background-color: #EAAA00;
+	    float: left;
+	    border-style: solid;
+	    border-color: black;
+	    border-width: 2px;
+    }
+
+    .ArrowMenuItem {
+	    float: left;
+	    height: 40px;
+	    width: 150px;
+    }
+
+    .ArrowMenuItemLast{
+	    float: left;
+	    height: 40px;
+	    width: 140px;
+    }
+
+    .ArrowMenuText p , .ArrowMenuTextSelected p 
+    {
+	    margin: 0;
+    }
+	
+
+    .ArrowMenuText {
+	    float: left;
+	    width: 140px;
+	    height: 40px;
+	    color: BLACK;
+	    text-align: center;
+	    font-size: 0.895em;
+	    padding-top: 7px;
+	    padding: 0;
+    }
+
+    .ArrowMenuTextSelected {
+	    float: left;
+	    width: 140px;
+	    height: 40px;
+	    background-image: url("/gfx/AttendanceArrows/Selected.png");
+	    background-repeat: repeat-x;
+	    color: BLACK;
+	    text-align: center;
+	    font-size: 0.95em;
+	    padding-top: 7px;
+	    padding: 0;
+    }
+
+    .ArrowMenuArrow {
+	    float: left;
+	    width: 10px;
+	    height: 40px;
+	    background-image: url("/gfx/AttendanceArrows/lines.png");
+    }
+
+    .ArrowMenuArrowToSelection {
+	    float: left;
+	    width: 10px;
+	    height: 40px;
+	    background-image: url("/gfx/AttendanceArrows/LineNoToSelected.png");
+    }
+
+    .ArrowMenuArrowFromSelection {
+	    float: left;
+	    width: 10px;
+	    height: 40px;
+	    background-image: url("/gfx/AttendanceArrows/LineSelectedToNo.png");
+    }
+/* -------------------------------------------------------- */ 

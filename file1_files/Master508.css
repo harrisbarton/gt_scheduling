@@ -1,0 +1,1791 @@
+ * {
+	margin:0;
+	padding:0;
+	border:0;
+    box-sizing:border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow:none;
+    font-family:'Open Sans', sans-serif;
+}
+ div {
+     display:block;
+     position:relative; /* this line may cause certain devexpress items to be invisible: see ticket #283739      ko: 07/29/2019 */
+ }
+
+ div#TechSupportInstructions {
+     position: static;
+ }
+ 
+ .dxgvFilterBarLink_Custom, .dxGridView_gvFilterRowButton_Custom, .dxgvFilterBarImageCell_Custom {  
+ 	display: none;  
+ }  
+/*=============*/
+/*=========================================================================*/
+@media only screen and (min-width:0) {
+
+/*========= Begin Basic/Main Styles =========*/
+	.menuJumpTo {
+        display: block;
+        position:relative;
+	}
+
+	body {
+		display:block;
+		position:relative;
+		width:100%;
+		min-width:320px;
+		text-align:left;
+		background-color:#dddddd;
+		color:#282828;
+	}
+	main {
+		display:block;
+		position:relative;
+		width:100%;
+	}
+	
+/* rjm 05Jun2018: don't know why we do this, but it should be done on a page-by-page basis, not globally.
+ 	br {
+		display:none;
+	} */
+	div.bodybara {
+		height:auto !important;
+	}
+	div.oceContent {
+		display:block;
+		position:absolute;
+		top:50px;
+		left:50%;
+		width:95%;
+        width:calc(100% - 20px);
+        min-height:calc(100vh - 50px);
+		margin-left:-47.5%;
+        margin-left:calc(-50% + 10px);
+        padding:12px 12px 72px;
+		background-color:#fefefe;
+		color:#282828;
+	}
+	div.containerNameOfPage {
+		margin-top:10px;
+        margin-bottom:10px;
+	}
+	h1 {
+		display:block;
+		position:relative;
+		margin:0 10px;
+		font-size:2.0rem;
+		line-height:2.3rem;
+		font-weight:lighter;
+		font-weight:300;
+		color:#000000;
+		text-align:left;
+	}
+	.bold {
+		font-weight:bold;
+		font-weight:700;
+	}
+	.italic {
+		font-style:italic;
+	}
+	.underline {
+		text-decoration:underline;
+	}
+	div#oceWaitOverlay {
+		display:none;
+	}
+	div#oceWaitOverlay > div {
+		float:left;
+		position:relative;
+		top:10px;
+		left:10px;
+	}
+   .FreezePaneOff {
+      visibility: hidden;
+      display: none;
+      position: absolute;
+      top: -100px;
+      left: -100px;
+   }
+   .FreezePaneOn {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      visibility: visible;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.25);
+      z-index: 999;
+      /*filter:alpha(opacity=85);*/
+      /*-moz-opacity:0.85;*/
+      padding-top: 20%;
+   }
+   .InnerFreezePane {
+      text-align: center;
+      width: 66%;
+      margin:0 auto;
+      background-color: #666666;
+      color: White;
+      font-size: large;
+      border: 3px solid #ffffff;
+      border-radius:6px;
+      padding: 9px;
+   }
+
+	
+/*========= End Basic/Main Styles =========*/
+	
+/*========= Begin Warning/Error Styles =========*/
+	
+	div.oceError,
+	div.oceWarning {
+		display:block;
+		position:relative;
+		top:0;
+		width:100%;
+		color:#000000;
+	}
+	div.oceError {
+		background-color:#ff9999;
+	}
+	div.oceWarning {
+		background-color:#ffff99;
+	}
+	span.oceErrorText,
+	span.oceWarningText {
+		display:block;
+		position:relative;
+		padding:10px;
+		font-size:0.75rem;
+		line-height:1.0rem;
+	}
+
+/*========= End Warning/Error Styles =========*/
+	
+/*========= Begin Input Styles =========*/
+	
+	textarea,
+	select,
+	input[type="text"],
+	input[type="button"],
+	input[type="file"],
+	input[type="submit"],
+    input[type="password"],
+    textarea {
+		-webkit-appearance: none !important;
+		-moz-appearance:none !important;
+		appearance:none !important;
+		border:0;
+		font-family:'Open Sans', sans-serif;
+        font-size:16px !important;
+	}
+	select {
+		display:inline-block;
+		position:relative;
+		margin:1px 5px;
+		padding:5px 40px 5px 5px;
+		border:1px solid #282828;
+		background-image:url('/gfx/HeaderIcons/icon_triangleDown.png');
+		background-size:1.0rem 1.0rem;
+		background-position:right 10px center;
+		background-repeat:no-repeat;
+		/* vertical-align:bottom; */
+		background-color:#fefefe;
+		cursor:pointer;
+	}
+	select::-ms-expand {
+		display: none;
+	}
+	input[type=text], textarea, input[type="password"] {
+		display:inline-block;
+		position:relative;
+		margin:0 5px;
+		padding:5px 5px 0 5px;
+		border:1px solid #cccccc;
+		background-color:#ffffff;
+		/*vertical-align:bottom;*/
+	}
+    .hiddenInput {
+       position:absolute;
+       top:0;
+       left:0;
+       width:0px;
+       height:0px;
+       opacity:0.0;
+       z-index:-1;
+   }
+									
+/*========= End Input Styles =========*/
+
+/*========= Begin Ribbon Header =========*/
+	
+	header.ribbonHeader {
+		display:block;
+		position:fixed;
+		top:0;
+		left:50%;
+		width:100%;
+		height:50px;
+		margin-left:-50%;
+		font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+		font-weight:normal;
+		font-weight:400;
+		text-align:left;
+		box-shadow:0 15px 8px -8px rgba(0,0,0,0.25);
+		z-index:3;
+	}
+	header.ribbonHeader:before, 
+	header.ribbonHeader:after {
+		content:"";
+		position:absolute;
+		bottom:-10px;
+		width:0;
+		height:0;
+		border-top:10px solid #282828;
+		z-index:3;
+	}
+	header.ribbonHeader:after {
+		left:0;
+		border-left:10px solid transparent;
+	}
+	header.ribbonHeader:before {
+		right:0;
+		border-right:10px solid transparent;
+	}
+	div.HeaderContent508 {
+		display:block;
+		position:relative;
+		height:50px;
+		margin:0 !important;
+		padding:0 20px;
+		color:#ffffff;
+		vertical-align:middle;
+	}
+
+/*========= End Ribbon Header =========*/
+
+/*========= Begin Popout Menu (smaller screens ONLY) =========*/
+
+	div#headerMenuContainer {
+		display:block;
+		position:fixed;
+		top:60px;
+		left:-1000px;
+		width:67%;
+		padding-bottom:100%;
+		box-shadow:10px 0 8px rgba(0,0,0,0.15);
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+	input#menuButton {
+		-webkit-appearance: none !important;
+		-moz-appearance:none !important;
+		appearance:none !important;
+		display:none;
+	}
+	input#menuButton + label {
+		display:block;
+		position:absolute;
+		top:5px;
+		left:20px;
+		width:40px;
+		height:40px;
+		cursor:pointer;
+	}
+    input#menuButton + label > svg {
+        width:40px;
+        height:40px;
+    }
+    input#menuButton:focus + label, input#menuButton + label:hover {
+       transform:scale(1.1);
+   }
+	input#menuButton:checked ~ div#headerMenuContainer {
+		-webkit-transform:translateX(1000px);
+		-moz-transform:translateX(1000px);
+		-o-transform:translateX(1000px);
+		-ms-transform:translateX(1000px);
+		transform:translateX(1000px);
+	}
+	div.menuJumpTo,
+	div.headerMenu,
+	div.dxmLite_Custom,
+	div.dxmLite_Custom ul,
+	div.dxmLite_Custom li.dxm-item {
+		width:100%;
+	}
+	.dxm-ltr .dxm-horizontal li.dxm-item {
+		min-width:none !important;	/*	This keeps the menu items from becoming too far-spaced apart when changing screen size	*/
+	}
+	li.dxm-separator {
+		display:none;       /* Just added separators to headermenu508, will set style to default   ~JohnB  10/14/17 */    
+	}
+	li.dxm-subMenu {
+		padding: 10px 0px;
+	}
+	div.dxm-popOut {
+		top:6px;
+		height:7px !important;
+	}
+	div.dxmLite_Custom {
+		padding-right:15px;
+		font-family:'Open Sans', 'Trebuchet MS', sans-serif;
+		font-size:1.0rem;
+		font-weight:400;
+		text-align:right;
+	}
+	.dxmLite_Custom .dxm-main {
+		border:0;
+	}
+	.dxmLite_Custom .dxm-horizontal {
+		background: none;
+	}
+
+/*========= End Popout Menu (smaller screens ONLY) =========*/
+
+/*========= Begin Search & Export Styles ==========*/
+   #panSearchFeature,
+   #panExportFeature {
+        position:absolute;
+        top:13px;
+        width:24px;
+        height:24px;
+   }
+   #panSearchFeature {
+       left:12px;
+   }
+   #panExportFeature {
+       left:60px;
+   }
+   #cbSearchTrigger + label,
+   #cbExportTrigger + label {
+       display:block;
+       position:relative;
+       width:24px;
+       height:24px;
+       border-radius:4px;
+       background-color:transparent;
+       text-align:center;
+       cursor:pointer;
+   }
+   #cbSearchTrigger:focus + label, #cbSearchTrigger + label:hover,
+   #cbExportTrigger:focus + label, #cbExportTrigger + label:hover, 
+   .lnkExportForDivDeptAvgs:focus > svg, .lnkExportForDivDeptAvgs > svg:hover {
+       transform:scale(1.1);
+   }
+   #cbSearchTrigger + label > svg,
+   #cbExportTrigger + label > svg {
+       display:block;
+       position:relative;
+       width:24px;
+       height:24px;
+   }
+   #divSearchInterface,
+   #divExportInterface {
+       display:block;
+       position:fixed;
+       top:-500px;
+       left:10px;
+       width:320px;
+       padding:12px;
+       border-radius:0 0 6px 6px;
+       box-shadow:0 3px 6px rgba(0,0,0,0.18);
+       transition:top 0.1s ease;
+       z-index:-1;
+   }
+   #cbSearchTrigger:checked ~ #divSearchInterface,
+   #cbExportTrigger:checked ~ #divExportInterface {
+       top:49px;
+   }
+   #divSearchInterface > input[type=text] {
+       display:block;
+       position:relative;
+       width:100%;
+       margin:0 0 6px;
+       padding:9px;
+       background-color:#ffffff;
+       color:#282828;
+   }
+   #divSearchInterface > span,
+   #divExportInterface > span {
+       display:block;
+       position:relative;
+       margin:0 0 6px;
+       font-size:0.8125rem;
+       font-weight:400;
+   }
+   #divSearchCriteriaButtonFlex {
+       display:block;
+       display:flex;
+       justify-content:space-between;
+       flex-wrap:nowrap;
+   }
+   #panExportFeature select {
+       width:100%;
+       margin:0;
+   }
+/*========= End Search & Export Styles =========*/
+
+/*========= Begin Spinning/MorphLogo =========*/
+
+	div.panelMorph,
+	div.morphContainer {
+		height:44px;
+		vertical-align:middle;
+		z-index:10;
+	}
+	div.panelMorph {
+		display:inline-block;
+		position:absolute;
+		top:3px;
+		right:9px;
+	}
+	div.morphContainer {
+		display:block;
+		position:relative;
+	}
+	div.MorphPic {
+		width:88px;
+		height:44px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		box-shadow:0 5px 8px rgba(0,0,0,0.35);
+		overflow:hidden;
+	}
+	div.morph {
+		display:block;
+		position:relative;
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:center;
+		background-color:#ffffff;
+		vertical-align:middle;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		border-radius:10px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease; 
+		z-index:10;
+	}
+	div.morph:hover {
+		background: url('/gfx/HeaderIcons/logoPuzzle_Web_150px.png');
+		background-repeat:no-repeat;
+		background-size:90%;
+		background-position:center;
+		background-color:#ffffff;
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+		z-index:10;
+	}
+	
+/*========= End Spinning/MorphLogo =========*/
+
+/*========= Begin Choice Page Styles =========*/
+
+	span.ChoiceMainExplanation {
+		display:block;
+		position:relative;
+		margin:10px 0;
+		padding:0 10px;
+		font-size:0.85rem;
+		line-height:1.1rem;
+	}
+	div.selectContainer {
+		display:block;
+		position:relative;
+		width:95%;
+		margin:25px auto 10px;
+	}
+	div.panelChoiceGoBackButton {
+		display:block;
+		position:relative;
+		width:100%;
+		margin:20px 0;
+	}
+	a.buttonChoiceGoBack {
+		display:block;
+		position:relative;
+		padding:10px;
+		background-color:#2D539E; /* customer preference color(?) */
+		font-weight:lighter;
+		font-weight:300;
+		color:#ffffff;
+		text-align:center;
+		text-decoration:none;
+	}
+	a.buttonChoiceGoBack:active {
+		background-color:#999999;
+		box-shadow:inset 0 0 35px rgba(0,0,0,0.4), 2px 2px 2px rgba(0,0,0,0.15);
+		transform:scale(0.97);
+	}
+	div.choiceContainer {
+		display:block;
+		position:relative;
+		width:100%;
+	}
+	div.ChoiceBlock {
+		display:block;
+		position:relative;
+		margin-bottom:10px;
+		padding:10px;
+		background-color:#eeeeee;
+	}
+	span.choiceBlockHeadline {
+		display:block;
+		position:relative;
+		margin-bottom:10px;
+		font-size:1.4rem;
+		line-height:1.6rem;
+		font-weight:lighter;
+		font-weight:300;
+	}
+	span.choiceBlockExplanationAbove,
+	span.choiceBlockExplanationBelow {
+		display:block;
+		position:relative;
+		font-size:0.75rem;
+		line-height:0.95rem;
+	}
+	a.buttonSelectChoice {
+		display:block;
+		position:relative;
+		width:100%;
+		margin:10px 0 0;
+		padding:15px 0;
+		background-color:#2D539E;
+		font-size:1.25rem;
+		font-weight:lighter;
+		font-weight:300;
+		text-align:center;
+		color:#ffffff;
+		text-decoration:none;
+	}
+	a.buttonSelectChoice:active {
+		background-color:#777777;
+		box-shadow:inset 0 0 35px rgba(0,0,0,0.4);
+		transform:scale(0.97);
+	}
+	div.ChoiceExplanation {
+		display:block;
+		position:relative;
+		margin:10px 0 50px;
+		padding:0 10px;
+		font-size:0.85rem;
+		line-height:1.1rem;
+	}
+
+/*========= End Choice Page Styles =========*/
+
+/*========= Begin Fixed Info Styles =========*/
+    span.OCENotes508 {
+        /*display:none;*/
+        position:fixed;
+        top:100px;
+        right:0;
+        min-width:30px;
+        max-width:250px;
+        margin:0;
+        padding:24px 10px 10px;
+        background:#fffcdf;
+        color:#282828;
+        box-shadow:0 10px 20px rgba(0,0,0,0.09);
+        z-index:2;
+    }
+	span.personName508 {
+		display:inline-block;
+		position:fixed;
+		top:3px;
+		right:115px;
+		max-width:40%;
+		height:44px;
+		font-size:0.8rem;
+		line-height:44px;
+		color:#ffffff;
+		vertical-align:middle;
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+		z-index:10;
+	}
+    
+    div.HeaderSchoolName {
+        position: fixed;
+        bottom: 0;
+        padding: 9px 9px 9px 12px;
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+        border-radius: 0 12px 0 0;
+        z-index: 10;   
+    }
+    div.HeaderSchoolName > a,
+    span.personName508 > a {
+        display:block;
+        position:relative;
+    }
+    div.HeaderSchoolName > a:hover,
+    div.HeaderSchoolName > a:focus,
+    span.personName508 > a:hover,
+    span.personName508 > a:focus {
+        transform:scale(1.05);
+    }
+
+/*========= End Fixed Info Styles =========*/
+
+/*========= Begin Button Styles =========*/
+
+    input[type=submit], input[type=button], button,
+    .ocebuttonfull span, .basicButton {
+        /*display:block;*/  /* messes up reporting/choosemyquestions.aspx */ 
+        display: inline-block; 
+        position:relative;
+        margin:0 0 9px;
+		padding:9px;
+        border-radius:9px;
+        font-family:'Open Sans', sans-serif !important;
+		font-weight:400;
+        cursor:pointer;
+        box-shadow:0 3px 6px rgba(0,0,0,0.20);
+        transition:all 0.25s ease;
+        transition-property:background-color, color;
+    }
+    .basicButton {
+        display:inline-block;
+    }
+	.saveButton {
+		padding-left:55px;
+		background-color:#008800;
+		background-image:url('/gfx/HeaderIcons/icon_save.png');
+		background-position:10px center;
+		background-repeat:no-repeat;
+	}
+	.uploadButton {
+		padding-left:55px;
+		background-image:url('/gfx/HeaderIcons/icon_upload.png');
+		background-position:10px center;
+		background-repeat:no-repeat;
+	}
+	.deleteButton {
+		padding-left:55px;
+		background-color:#cc0000;
+		background-image:url('/gfx/HeaderIcons/icon_delete.png');
+		background-position:10px center;
+		background-repeat:no-repeat;
+	}
+	.deleteButton:active {
+		background-color:#770000 !important;
+	}
+	.basicButton:active, input[type="submit"]:active, input[type="button"]:active {
+		box-shadow:inset 0 0 25px rgba(0,0,0,0.4);
+		transform:scale(0.97);
+		background-color:#777777;
+	}
+	div#upButton {
+		display:none;
+		position:fixed;
+		bottom:-200px;
+		right: 20px;
+		background: #2D539E url('/gfx/upButton.png') 0 0/cover no-repeat;
+		filter:Alpha(opacity=30);
+		opacity:0.3;
+		cursor:pointer;
+		border-radius:50%;
+		z-index:4000000;
+	}
+    .lnkButton {
+        display:block;
+        position:relative;
+        padding:6px;
+        border-radius:6px;
+        font-size:16px;
+        font-weight:400;
+        text-align:center;
+        text-decoration:none;
+        box-shadow:0 3px 6px rgba(0,0,0,0.20);
+    }
+
+/*========= End Button Styles =========*/
+
+/*========= Word Cloud Styles (referenced from RDDSet) Go Here =========*/
+	
+	.dxccControl_cloud508 a {
+		font-family:'Open Sans', sans-serif;
+		text-decoration:none !important;
+	}
+	
+/*========= End Word Cloud Styles =========*/
+
+/*========= Responsive Chart Styles (any page) Go Here =========*/
+	svg#MyFocusLineChart {
+		display: none;
+		position: relative;
+		height: auto;
+		background-color: transparent;
+		font-family: 'Open Sans', sans-serif;
+	}
+	polyline.axisMFLC {
+		stroke-width: 4;
+		stroke: #282828;
+		stroke-linecap: round;
+	}
+	text.yAxisLabelMFLC {
+		fill: #282828;
+		font-size: 1.25rem;
+		font-weight: 700;
+	}
+	text.noDataTextMFLC {
+		fill: #282828;
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
+	line.yMarkerMFLC {
+		stroke: #cfcfcf;
+		stroke-width: 1;
+	}
+	line.xMarkerMFLC {
+		stroke: #282828;
+		stroke-width: 4;
+	}
+	path.chartLineMFLC {
+		stroke-width: 6;
+		stroke-linecap: round;
+	}
+	circle.chartPointMFLC {
+		cursor: pointer;
+	}
+	text.shortQuestionTextMFLC {
+	fill: #282828;
+		font-size: 1.0rem;
+		font-weight: 400;
+	}
+	text.avgScoreTextMFLC,
+	text.pctTextMFLC {
+		fill: #282828;
+	}
+	text.avgScoreTextMFLC > tspan:first-of-type {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	text.avgScoreTextMFLC > tspan:nth-of-type(2) {
+		font-size: 2.0rem;
+		font-weight: 700;
+	}
+	text.pctTextMFLC > tspan:first-of-type {
+		font-size: 2.0rem;
+		font-weight: 700;
+	}
+	text.pctTextMFLC > tspan:nth-of-type(2),
+	text.pctText2ndLineMFLC {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+	div#MFLCDataGoesHere {
+		display: none;
+	}
+/*========= End Responsive Chart Styles =========*/
+
+/*========= Begin Menu Tabs Styles =========*/
+    .mnuTabs a {
+        text-decoration: none;
+        white-space: nowrap;
+        display: block;
+    }
+    .mnuTabs a.static {
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 5px 10px 12px !important;
+        background-color: #ffffff;
+        font-size: 0.9rem;
+        line-height: 1.0rem;
+        color: #666666;
+        border-radius: 15px 15px 0 0;
+        box-shadow: inset 3px 0 10px -5px rgba(0,0,0,0.25), 3px 0 6px rgba(0,0,0,0.2);
+        font-weight: 400;
+        text-decoration: none;
+        border-style: none;
+        padding-left: 0.15em;
+        padding-right: 0.15em;
+    }
+    .mnuTabs a.static.selected {
+        text-decoration:none;
+        border-style:none;
+    }
+    .mnuTabs a.static.highlighted {
+        box-shadow: inset 3px 0 10px -5px rgba(0,0,0,0.25),3px 0 6px rgba(0,0,0,0.2);
+    }
+/*========= End Menu Tabs Styles =========*/
+
+/*========= Begin Table Styles =========*/
+	.dxgvControl_Custom, 
+	.dxgvDisabled_Custom {
+		border:0;
+        background-color:transparent !important;
+		font:1.0rem "Open Sans", sans-serif;
+	}
+    .dxgvTable_Custom {
+        border-collapse:collapse !important;
+        background-color:transparent !important;
+        font-size:0.875rem;
+    }
+    td.dxgvHeader_Custom {
+        background-image:none !important;
+        font-weight:600;
+        cursor:default !important;
+		white-space: normal !important;
+		text-align: center;
+    }
+     table.dataDictionaryTable {
+         border:1px solid #282828;
+         border-collapse:collapse;
+         border-spacing:0;
+     }
+     table.dataDictionaryTable td,
+     table.dataDictionaryTable th {
+         padding:9px !important;
+         border:1px solid #666666;
+     }
+     .dxgvFCSD {
+         height:17px !important;
+     }
+	 .resizeGrabBar {
+        background-color:#fafafa;
+        color:#666666;
+        cursor:grab;
+        box-shadow:0 3px 6px rgba(0,0,0,0.15);
+     }
+	 .resizeGrabBar tr.dxgv > td {
+		height:24px;
+		font-size:0.85rem;
+		font-weight:400;
+        line-height:16px;
+		text-align:center;
+	 }
+    .resizeGrabBar:active {
+        background-color: #f2f2f2;
+        color: #000000;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        transform: scale(0.99);
+    }     
+    .resizeGrabBar tr.dxgv > td > img {
+         width:30px;
+         height:20px;
+         vertical-align:middle;
+     }
+     .resizeGrabBar tr.dxgv > td > img {
+         vertical-align:middle;
+     }
+     .hiddenLabel {
+         display:none;
+     }
+/*========= End Table Styles =========*/
+
+/*========= Begin RDD Styles =========*/
+    select.drpReporting {
+        box-sizing:border-box;
+        width:100%;
+        margin:1px 0;
+    }
+	.drpReportingHidden {
+		display: none !important;
+	}
+/*========= End RDD Styles =========*/
+
+}
+/*=========================================================================*/
+@media only screen and (min-width:480px) {
+	h1 {
+		font-size:2.25rem;
+		line-height:2.55rem;
+	}
+	div.ChoiceBlock {
+		box-shadow:2px 2px 5px rgba(0,0,0,0.1);	
+	}
+}
+/*=========================================================================*/
+@media only screen and (min-width:640px) {
+	h1 {
+		font-size:2.5rem;
+		line-height:2.8rem;
+	}
+	div.choiceContainer {
+		display:flex;
+		flex-wrap:wrap;
+	}
+	div.ChoiceBlock {
+		display:inline-block;
+		width:45%;
+		min-height:200px;
+		margin:0 auto 15px;
+		vertical-align:top;
+		box-shadow:4px 4px 6px rgba(0,0,0,0.1);	
+	}
+	a.buttonSelectChoice {
+		position:absolute;
+		bottom:10px;
+		left:50%;
+		width:90%;
+		margin-left:-45%;
+	}
+	div.ChoiceExplanation {
+		margin-top:20px;
+	}
+	.basicButton, input[type="submit"], input[type="button"] {
+		/*margin:10px 10px 0 0;
+		padding:15px;
+		font-size:1rem;*/
+	}
+	.saveButton,
+	.uploadButton,
+	.deleteButton {
+		padding-left:57px !important;
+	}
+}
+/*=========================================================================*/
+@media only screen and (min-width:720px) {
+    .divDropdownFlex {
+        display:block;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-content: flex-start;
+    }
+    .divDropdownFlex > div {
+        width:49%;
+    }
+}
+/*=========================================================================*/
+@media only screen and (min-width:768px) {
+	select.menuJumpToExportDrop {
+		font-size:1.0rem;
+	}
+	div.ChoiceBlock {
+		width:200px;
+		min-height:250px;
+		margin:0 13px 10px 0;
+	}
+	span.choiceBlockExplanationAbove,
+	span.choiceBlockExplanationBelow {
+		font-size:0.85rem;
+		line-height:1.0rem;
+	}
+}
+/*=========================================================================*/
+@media only screen and (min-width:806px) {
+
+/*========= Begin DevExpress Header Menu styles =========*/
+	
+	input#menuButton, input#menuButton + label {
+		display:none;
+	}
+	div#headerMenuContainer {
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		width:auto;
+		padding-bottom:0;
+	}
+	div.headerMenu {
+		display:inline-block;
+		position:absolute;
+		top:13px;
+		right:125px;
+		left:auto;
+		width:auto;
+		vertical-align:middle;
+		box-shadow:none;
+	}
+	div.dxmLite_Custom {
+		padding-right:0;
+		font-family:'Open Sans', 'Trebuchet MS', sans-serif;
+		font-size:0.65rem;
+		font-weight:400;
+	}
+	.dxm-ltr .dxm-main, .dxm-ltr .dxm-horizontal ul.dx {
+		display:inline-block;
+		float:left;
+	}
+	.dxm-ltr .dxm-horizontal li.dxm-item {
+		display:inline-block;
+		float:left;
+		width:auto;
+		text-align:left;
+	}
+	div.dxmLite_Custom div.dxm-horizontal {
+		background:none;
+	}
+	div.dxmLite_Custom div.dxm-main {
+		border:0;
+	}
+	li.dxm-subMenu {
+		padding:0;
+		-webkit-transition: all 0.25s ease;
+		-moz-transition: all 0.25s ease;
+		-o-transition: all 0.25s ease;
+		-ms-transition: all 0.25s ease;
+		transition: all 0.25s ease;
+	}
+	li.dxm-subMenu:hover {
+		-webkit-transform:translateY(5px);
+		-moz-transform:translateY(5px);
+		-o-transform:translateY(5px);
+		-ms-transform:translateY(5px);
+		transform:translateY(5px);
+	}
+	div.dxm-popOut {
+		top:0;
+		margin-left:5px;
+	}
+	div.dxmLite_Custom div.dxm-main li.dxm-hovered,
+	div.dxmLite_Custom div.dxm-main li.dxm-checked, 
+	div.dxmLite_Custom div.dxm-main li.dxm-selected {
+		background:none;
+	}
+	div.dxmLite_Custom div.dxm-popup {
+		border:0;
+		padding:0;
+		box-shadow:5px 5px 10px rgba(0,0,0,0.1);
+	}
+	div.dxmLite_Custom div.dxm-popup li.dxm-item a.dx {
+		font-size:0.75rem;
+	}
+	li.dxm-separator {
+		display:inline-block;
+		width:2px;
+		background-color:#ffffff;
+		height: 24px !important;
+	}
+	li.dxm-spacing {
+		display:none;
+    }
+	li.dxm-item	{
+		border-color: transparent;
+		border-style: none;
+	}
+/*========= End DevExpress Header Menu styles =========*/
+
+	/*div.menuJumpTo {
+		display:inline-block;
+		position:absolute;
+		top:25px;
+		bottom:auto;
+		left:15px;
+		margin-top:-15px;
+		background-color:transparent;
+		vertical-align:middle;
+		border-radius:0;
+		box-shadow:none;
+	}*/
+/* 	input.menuJumpToTextBox {
+		display:inline-block;
+		position:relative;
+		height:20px;
+		width:200px;
+		margin:0 10px;
+		padding:5px 10px;
+		font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+		font-weight:lighter;
+		font-weight:300;
+		vertical-align:middle;
+	}
+ */	select.menuJumpToExportDrop {
+		margin:0 10px;
+		padding:5px 10px;
+		border:1px solid #ffffff;
+		background-image:url('/gfx/HeaderIcons/icon_triangleDown-white.png');
+		font-size:0.85rem;
+		vertical-align:middle;
+		-webkit-transition: all 0.25s ease;
+		-moz-transition: all 0.25s ease;
+		-o-transition: all 0.25s ease;
+		-ms-transition: all 0.25s ease;
+		transition: all 0.25s ease; 
+	}
+	select.menuJumpToExportDrop::-ms-expand {
+		display: none;
+	}
+	span.personName508 {
+		top:auto;
+		right:0;
+		bottom:0;
+		max-width:none;
+		height:auto;
+		padding:10px;
+		border-top:2px solid #2D539E;
+		border-left:2px solid #2D539E;
+		background-color:#efefef;
+		line-height:normal;
+		color:#282828;
+		border-radius:15px 0 0 0;
+		box-shadow:-2px -2px 8px rgba(0,0,0,0.2);
+		white-space:normal;
+		z-index:10;
+	}
+}
+/*=========================================================================*/
+@media only screen and (min-width:1024px) {
+	div.containerNameOfPage {
+		margin-top:20px;
+        margin-bottom:20px;
+	}
+	div.panelMorph,
+	div.morphContainer {
+		z-index:10;
+	}
+	span.OCENotes508 {
+        position: fixed;
+        top: auto;
+        bottom: 40px;
+        right: 0;
+        min-width: 120px;
+        max-width: 250px;
+        margin: 0;
+        padding: 30px 10px 10px;
+        background: #fffcdf;
+        color: #282828;
+        box-shadow: -10px 10px 20px rgba(0,0,0,0.09);
+        z-index: 2;
+	}
+	span.OCENotes508 > a,
+	span.OCENotes508 > a:visited {
+		font-weight:bold;
+		font-weight:700;
+		color:#990000;
+	}
+	span.OCENotes508 > a:hover,
+	span.OCENotes508 > a:active {
+		color:#666666;
+	}
+	div.selectContainer {
+		display:flex;
+		justify-content:center;
+		position:relative;
+		width:100%;
+		margin:25px auto 20px;
+	}
+	div.panelChoiceGoBackButton {
+		display:inline-block;
+		position:relative;
+		width:75px;
+		margin:0 25px 0 10px;
+		vertical-align:top;
+		order:1;
+	}
+	a.buttonChoiceGoBack {
+		position:relative;
+		height:95%;
+		margin:0;
+		padding:0 10px;
+		background-image:url('/gfx/menu/icon_backArrow.png');
+		background-size:50%;
+		background-position:center;
+		background-repeat:no-repeat;
+		box-shadow:4px 4px 6px rgba(0,0,0,0.1);	
+		-webkit-transition: all 0.15s ease;
+		-moz-transition: all 0.15s ease;
+		-o-transition: all 0.15s ease;
+		-ms-transition: all 0.15s ease;
+		transition: all 0.15s ease; 
+	}
+	a.buttonChoiceGoBack:hover,
+	a.buttonChoiceGoBack:focus {
+		background-color:#999999;
+	}
+	a.buttonChoiceGoBack:active {
+		box-shadow:inset 0 0 35px rgba(0,0,0,0.4), 2px 2px 2px rgba(0,0,0,0.15);
+		transform:scale(0.97);
+	}
+	a.buttonChoiceGoBack > span {
+		visibility:hidden;
+	}
+	div.choiceContainer {
+		display:inline-block;
+		position:relative;
+		width:auto;
+		order:2;
+	}
+	div.ChoiceBlock {
+		width:250px;
+		min-height:250px;
+		margin:0 13px 10px 0;
+		-webkit-transition: all 0.15s ease;
+		-moz-transition: all 0.15s ease;
+		-o-transition: all 0.15s ease;
+		-ms-transition: all 0.15s ease;
+		transition: all 0.15s ease; 
+	}
+	div.ChoiceBlock:hover {
+		transform:scale(1.05);
+		box-shadow:7px 7px 7px rgba(0,0,0,0.07);
+	}
+	span.choiceBlockHeadline {
+		margin-bottom:17px;
+	}
+	a.buttonSelectChoice {
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		transition: all 0.2s ease; 
+	}
+	a.buttonSelectChoice:before{
+		content: '';
+		position: absolute;
+		border: #2D539E solid 3px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		-webkit-transition-duration: 0.2s;
+		transition-duration: 0.2s;
+		-webkit-transition-property: top, right, bottom, left;
+		transition-property: top, right, bottom, left;
+	}
+	a.buttonSelectChoice:hover,
+	a.buttonSelectChoice:focus {
+		background-color:#777777;
+	}
+	a.buttonSelectChoice:active {
+		box-shadow:inset 0 0 35px rgba(0,0,0,0.4);
+		transform:scale(0.97);
+	}
+	a.buttonSelectChoice:hover:before, 
+	a.buttonSelectChoice:focus:before, 
+	a.buttonSelectChoice:active:before {
+		top: -6px;
+		right: -6px;
+		bottom: -6px;
+		left: -6px;
+		border: #777777 solid 3px;
+	}
+	.basicButton, input[type="submit"], input[type="button"] {
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-ms-transition: all 0.2s ease;
+		transition: all 0.2s ease; 
+		cursor:pointer; 
+	}
+	.saveButton:hover,
+	.saveButton:focus {
+		background-color:#006600 !important;
+	}
+	.deleteButton:hover,
+	.deleteButton:focus {
+		background-color:#770000 !important;
+	}
+	.saveButton:before {
+		border:#008800 solid 1px;
+	}
+	.basicButton:hover, input[type="submit"]:hover, input[type="button"]:hover,
+	.basicButton:focus, input[type="submit"]:focus, input[type="button"]:focus{
+		background-color:#777777;
+	}
+    .divDropdownFlex > div {
+        width:32%;
+    }
+}
+/*=========================================================================*/
+@media only screen and (min-width:1280px) {
+	div.headerMenu {
+		right:200px;
+	}
+	div.morphContainer {
+		display:block;
+	}
+	div.MorphPic {
+		width:150px;
+		height:75px;
+	}
+	div.dxmLite_Custom {
+		font-size:0.7rem;
+	}
+	div.ChoiceBlock {
+		width:280px;
+		min-height:300px;
+		margin:0 15px 15px 0;
+	}
+	span.choiceBlockHeadline {
+		margin-bottom:20px;
+		font-size:2.0rem;
+		line-height:2.3rem;
+	}
+	span.choiceBlockExplanationAbove,
+	span.choiceBlockExplanationBelow {
+		font-size:0.9rem;
+		line-height:1.05rem;
+	}
+	div.ChoiceExplanation {
+		font-size:1.0rem;
+		line-height:1.2rem;
+		text-align:left;
+	}
+    .divDropdownFlex {
+        width:1200px;
+    }
+}
+/*=========================================================================*/
+@media only screen and (min-width:1800px) {
+	div.containerNameOfPage {
+		margin-top:25px;
+        margin-bottom:25px;
+	}
+	span.oceErrorText,
+	span.oceWarningText {
+		font-size:0.8rem;
+		line-height:1.0rem;
+	}
+	div.ChoiceBlock {
+		width:280px;
+		min-height:300px;
+		margin:0 10px 15px;
+		text-align:left;
+	}	
+	span.choiceBlockHeadline {
+		font-size:2.25rem;
+		line-height:2.5rem;
+	}
+	span.choiceBlockExplanationAbove,
+	span.choiceBlockExplanationBelow {
+		font-size:1.0rem;
+		line-height:1.225rem;
+	}
+	a.buttonSelectChoice {
+		left:auto;
+		width:280px;
+		height:100px;
+		margin:0;
+		padding:0;
+		font-size:1.5rem;
+		line-height:100px;
+	}
+}
+
+/*========================= FOR PRINTING SCREENS FROM BROWSER ("PRINT STYLES") ================================================*/
+@media print{
+	* {
+		margin:0;
+		padding:0;
+		border:0;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-shadow:none;
+	}
+	html, body, main, main > form {
+		height:100%;
+	}
+	html, body {
+		margin:0;
+	}
+	body {
+		display:block;
+		position:relative;
+		top:0;
+		width:100%;
+		min-width:320px;
+		font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+		text-align:left;
+		color:#282828;
+	}
+	main {
+		display:block;
+		position:relative;
+		width:100%;
+	}
+/* rjm 05Jun2018: don't know why we do this, but it should be done on a page-by-page basis, not globally.
+ 	br {
+		display:none;
+	} */
+	span.bold {
+		font-weight:bold;
+		font-weight:700;
+	}
+	span.italic {
+		font-style:italic;
+	}
+	span.underline {
+		text-decoration:underline;
+	}
+	div#oceWaitOverlay {
+		display:none;
+	}
+	div.oceContent {
+		display:block;
+		position:absolute;
+		top:67px;
+		background-color:#fefefe;
+		color:#282828;
+	}
+	h1 {
+		display:block;
+		position:relative;
+		margin:0 10px;
+		font-size:2.0rem;
+		line-height:2.3rem;
+		font-weight:lighter;
+		font-weight:300;
+		color:#000000;
+		text-align:left;
+	}
+	textarea,
+	select,
+	input[type="text"],
+	input[type="button"],
+	input[type="file"],
+	input[type="submit"],
+    input[type="password"],
+    textarea {
+		-webkit-appearance: none !important;
+		-moz-appearance:none !important;
+		appearance:none !important;
+		border:0;
+		font-family:'Open Sans', 'Trebuchet MS', sans-serif;
+	}
+	select {
+		display:inline-block;
+		position:relative;
+		margin:1px 5px;
+		padding:5px 40px 5px 5px;
+		border:1px solid #282828;
+		background-image:url('/gfx/HeaderIcons/icon_triangleDown.png');
+		background-size:1.0rem 1.0rem;
+		background-position:right 10px center;
+		background-repeat:no-repeat;
+		/* vertical-align:bottom; */
+		background-color:#fefefe;
+		cursor:pointer;
+	}
+	select::-ms-expand {
+		display: none;
+	}	
+	input[type=text], textarea, input[type="password"] {
+		display:inline-block;
+		position:relative;
+		margin:0 5px;
+		padding:5px 5px 0 5px;
+		border:1px solid #cccccc;
+		background-color:#f9f9f9;
+		font-size:1.0rem;
+		vertical-align:bottom;
+	}
+	span.OCENotes508 {
+		display:none;
+	}
+	span.personName508 {
+		position:absolute;
+		top:51px;
+		right:10px;
+		bottom:auto;
+		left:auto;
+		font-size:0.85rem;
+	}
+	header.ribbonHeader {
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:50px;
+		background-color:#2D539E;
+		background-image:url('/gfx/HeaderIcons/logoPuzzle_Web_150px.png');
+		background-position:7px center;
+		background-size:contain;
+		background-repeat:no-repeat;
+		font-family: 'Open Sans', 'Trebuchet MS', sans-serif;
+		font-weight:normal;
+		font-weight:400;
+		text-align:left;
+		color:#ffffff;
+	}
+	input#menuButton {
+		display:none;
+	}
+	div.HeaderContent508 {
+		display:block;
+		position:relative;
+		height:50px;
+		margin:0 !important;
+		padding:0 20px;
+		color:#ffffff;
+		vertical-align:middle;
+	}
+	div#headerMenuContainer {
+		display:none;
+	}
+	div.menuJumpTo {
+		display:none;
+	}
+	div.panelMorph,
+	div.morphContainer {
+		height:44px;
+		vertical-align:middle;
+	}
+	div.panelMorph {
+		display:inline-block;
+		position:absolute;
+		top:3px;
+		right:9px;
+	}
+	div.morphContainer {
+		display:block;
+		position:relative;
+	}
+	div.MorphPic {
+		width:88px;
+		height:44px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		box-shadow:0 5px 8px rgba(0,0,0,0.35);
+		overflow:hidden;
+	}
+	div.morph {
+		display:block;
+		position:relative;
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:center;
+		background-color:#ffffff;
+		vertical-align:middle;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box;
+		border-radius:10px;
+		z-index:10;
+	}
+}
+@media print and (color) {
+	* {
+		-webkit-print-color-adjust:exact;
+		print-color-adjust:exact;
+	}
+}
+
+   
+}
+/**** SmartEvals Left Panel ***********************************************/
+    .mnuMainTable{
+        border:1px solid #bbbbbb;
+        background-color: #fff;
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+        border-collapse: collapse;
+}
+    #_ctl0_cphContent_mnuPrefLeftPanel br {
+        display: none;
+}
+    .mnuMainTable tr{
+        vertical-align:top;
+}
+    .mnuPrefLeftItem {
+        border-color: #bbbbbb;
+        border: 0px;
+        height: 50px;
+        width: 200px;
+}
+    .prefLeftButton {
+        background-repeat: no-repeat;
+        background-position: 5px 10px;
+        height: 50px;
+        width: 200px;
+        display: block;
+        line-height: 50px;
+        text-align: left;
+        font-size: 1.2em;
+        border-bottom:1px solid #bbbbbb;
+        background-color: #f1f1f1;
+        vertical-align:top cursor: pointer;
+}
+    .prefLeftButton:hover {
+        font-size: 1.25em;
+        text-decoration: none;
+        background-color: #e3e3e3;
+        background-position: 6px 12px;
+        box-shadow: inset 0 10px 10px rgba(255, 255, 255, .5);
+        cursor: pointer;
+}
+    .prefLeftButton span{
+        padding-left: 35px;
+}
+    .mnuPrefLeftItemWide {
+        border-color: #bbbbbb;
+        border: 0px;
+        height: 50px;
+        width: 350px;
+}
+    .prefLeftButtonWide {
+        background-repeat: no-repeat;
+        background-position: 5px 10px;
+        height: 50px;
+        width: 350px;
+        display: block;
+        line-height: 50px;
+        text-align: left;
+        font-size: 1.2em;
+        border-bottom:1px solid #bbbbbb;
+        background-color: #f1f1f1;
+        vertical-align:top cursor: pointer;
+}
+    .prefLeftButtonWide:hover {
+        font-size: 1.25em;
+        text-decoration: none;
+        background-color: #e3e3e3;
+        background-position: 6px 12px;
+        box-shadow: inset 0 10px 10px rgba(255, 255, 255, .5);
+        cursor: pointer;
+}
+    .prefLeftButtonWide span{
+        padding-left: 35px;
+}
+    .prefLeftEmptySpot {
+}
+    .mnuTabBodyPrefNew {
+        padding: 10px;
+        border:0px solid #bbbbbb;
+        background-color: #fff;
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+        vertical-align:top;
+}
+    .mnuTabBodyPrefNew fieldset {
+        border-collapse: separate;
+}
+    .mnuPrefLeftItemSelected .prefLeftButton {
+        background-color: #e3e3e3;
+        box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+}
+    .mnuPrefLeftItemSelected .prefLeftButtonWide {
+        background-color: #e3e3e3;
+        box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+}
+    .ocePrefIconinfo {
+        background-image: url("/gfx/OCETheme/icons/icon9.png");
+}
+    .ocePrefIcondepthead {
+        background-image: url("/gfx/OCETheme/icons/icon10.png");
+}
+    .ocePrefIconinstructor {
+        background-image: url("/gfx/OCETheme/icons/icon10.png");
+}
+    .ocePrefIconstudent {
+        background-image: url("/gfx/OCETheme/icons/icon15.png");
+}
+    .ocePrefIconevaluations {
+        background-image: url("/gfx/OCETheme/icons/icon11.png");
+}
+    .ocePrefIconuploads {
+        background-image: url("/gfx/OCETheme/icons/icon5.png");
+}
+    .ocePrefIconloginlogout {
+        background-image: url("/gfx/OCETheme/icons/icon12.png");
+}
+    .ocePrefIconstyle {
+        background-image: url("/gfx/OCETheme/icons/icon13.png");
+}
+    .ocePrefIconreporting {
+        background-image: url("/gfx/OCETheme/icons/icon14.png");
+}
+    .ocePrefIconvoip {
+        background-image: url("/gfx/OCETheme/icons/iconSound.png");
+}
+    .ocePrefIconexttools {
+        background-image: url("/gfx/OCETheme/icons/icon16.png");
+}
+    .ocePrefIconicons {
+        background-image: url("/gfx/Icons/check_silver.png");
+}
+    .ocePrefIconNext {
+        background-image: url("/gfx/OCETheme/icons/iconArrowForward.png");
+}
+    .ocePrefIconBack {
+        background-image: url("/gfx/OCETheme/icons/iconArrowBack.png");
+}
+/*******************************************************************/
+/************************************* Prefs *************************************/
+    .prefPanel {
+        text-align:center;
+        margin:1em 1% 0.5em 2%;
+}
+    .prefPanel div {
+        text-align:left;
+    /*padding:0 0 0 2em ;
+    */
+}
+    .prefPanel div h2 {
+        display: block;
+        margin: 0.5em 0 0.2 0;
+        font-family:Sans-Serif;
+        font-size:medium;
+        font-weight:bold;
+}
+    .prefOption {
+        display:block;
+        margin: 0.5em 0 0 2em;
+}
+    .prefSubOption {
+        margin: 0 0 0.25em 4em;
+}
+    .prefErrorLabel {
+        margin: 0 0 0 4em;
+        color: Red;
+        font-size: 9pt;
+        display:block;
+}
+    .prefNoteLabel {
+        color: #332211;
+        font-size: 9pt;
+}
+    .prefSubPanel {
+        text-align:left;
+        padding:0px;
+        margin:0px;
+}
+    .prefSubPanel div {
+        text-align:left;
+        padding:0 0 0 0 ;
+}
+    .prefPanel fieldset {
+        text-align: left;
+        border:1px solid #bbbbbb;
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+}
+    .prefPanel fieldset table th{
+        text-align: center;
+}
+    .prefPanel h2 {
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+}
+    .oceyellowpanel fieldset {
+        text-align: left;
+        border:1px solid #bbbbbb;
+        background-color: #ffff33;
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+}
+    fieldset {
+        text-align: left;
+        border:1px solid #bbbbbb;
+        box-shadow: 0px 2px 2px rgba(187,187,187,0.6);
+}
+    .prefOption {
+        display:block;
+        margin: 0.5em 0 0 2em;
+}
+    .prefSubOption {
+        margin: 0 0 0.25em 4em;
+}
